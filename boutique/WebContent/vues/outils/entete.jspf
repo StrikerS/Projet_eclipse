@@ -1,0 +1,120 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<html>
+<head>
+<title>BetaBoutique</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="BetaBoutique">
+<!-- feuilles de styles -->
+<link rel="stylesheet" type="text/css" href="css/styles.css" 
+title="defaut" />
+<link rel="stylesheet" type="text/css" href="css/styles_panier.css" 
+title="defaut" />
+<!--  javascript -->
+<link type="text/css" rel="stylesheet" media="all" 
+href="javascript/jtip/jtip.css"/>
+<script type="text/javascript" src="javascript/jquery/jquery.js"></script>
+<script type="text/javascript" src="javascript/jtip/jtip.js"></script>
+</head>
+<body>
+
+<div id="global">
+
+     <div id="entete">
+         <table border="0" cellspacing="0" cellpadding="0" 
+width="100%" height="100%">
+         <tr>
+             <td align="left" valign="top"><a href="/"><img 
+src="img/bandeau_haut_gauche.jpg" border="0"/></a></td>
+             <td align="left" valign="top"><img src=
+"img/bandeau_haut_centre.jpg"/></td>
+             <td align="left" valign="top" background=
+"img/bandeau_haut_droite.jpg" width="222">
+                 <table border="0" cellspacing="0" 
+cellpadding="0" width="100%" height="100%">
+                 <tr><td height="50">
+                 <form id="formulairerecherche" 
+name="formulairerecherche" action="" method="post">
+                 <div class="titregris">RECHERCHE</div>
+                 <input type="text" id="recherche" 
+name="recherche" value=""/>
+                 <input type="image" src="img/ok.gif" 
+align="absmiddle"/>
+                 </form>
+                 </td></tr>
+                 <tr><td align="center"><span class="liengris">
+<a href="">MON COMPTE</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="liengris"><a href="">MON PANIER</a></span></td></tr>
+                 <tr><td align="right" height="20"><span 
+class="liengris"><a href="">DECONNEXION</a>&nbsp;</span><br/><br/>
+</td></tr>
+                 </table>
+             </td>
+         </tr>
+         </table>
+     </div>
+
+
+     <div id="contenu">
+
+
+     <table border="0" cellspacing="0" cellpadding="0" width="100%">
+     <tr>
+         <td valign="top" width="200">
+          <!-- COLONNE GAUCHE -->
+          <%@ include file="navigation.jspf" %> 
+         </td>
+
+
+         <!-- COLONNE CENTRE -->
+         <td valign="top" width="100%" style="padding-left:5px">
+         <ul id="menuhaut">
+          <li><a href="/" title="Accueil">Accueil</a></li>
+          <li><a href="" title="Promotions">Promotions</a></li>
+          <li><a href="" title="Nouveaut&eacute;s">Nouveaut&eacute;s
+</a></li>
+          <li><a href="" title="CGV">Conditions de vente</a></li>
+          <li><a href="" title="Panier">Commander</a></li>
+         </ul><br/>
+
+La page de navigation /vues/outils/navigation.jspf est également très simple. Elle permet d’afficher la liste des catégories ainsi que le résumé du panier réalisé en JavaScript. Pour le moment, les catégories sont affichées en dur, mais il est évident que par la suite, ce menu sera généré de manière dynamique (lecture des catégories dans une source de données).
+
+<table border="0" cellspacing="0" cellpadding="0" name="menugauche" 
+id="menugauche" style="background: url(’img/fondmenu.gif’) 
+repeat-x;"  height="500">
+          <tr>
+            <td width="100%" valign="top">
+             <ul class="menucategorie">
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Policier et Thriller</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Com&eacute;die</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Documentaires</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Jeunesse et Famille</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;S&eacute;ries TV</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Spectacles et Humour</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Fantastique</a></li>
+             </ul>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" align="center" bgcolor="#ffce00" 
+height="50" class="textepanier">
+             <a href="panierresumer.php?width=400" 
+class="jTip" id="aidedynamique" name="Panier Dynamique" 
+onclick="javascript:window.location=’’;">
+               <img src="img/panier.gif" border="0" 
+style="padding-top:10px;"/> <span>Panier</span>
+             </a>
+             <br/>
+</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/cartes.gif" 
+border="0" style="margin-bottom:5px;"/><br/></td>
+          </tr>
+</table>

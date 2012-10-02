@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<table border="0" cellspacing="0" cellpadding="0" name="menugauche" 
+id="menugauche" style="background: url(’img/fondmenu.gif’) 
+repeat-x;"  height="500">
+          <tr>
+            <td width="100%" valign="top">
+             <ul class="menucategorie">
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Policier et Thriller</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Com&eacute;die</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Documentaires</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Jeunesse et Famille</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;S&eacute;ries TV</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Spectacles et Humour</a></li>
+                 <li><a href=""><img src="img/fleche.gif" 
+border="0" align="absmiddle"/>&nbsp;Fantastique</a></li>
+             </ul>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" align="center" bgcolor="#ffce00" 
+height="50" class="textepanier">
+             <a href="panierresumer.php?width=400" 
+class="jTip" id="aidedynamique" name="Panier Dynamique" 
+onclick="javascript:window.location=’’;">
+               <img src="img/panier.gif" border="0" 
+style="padding-top:10px;"/> <span>Panier</span>
+             </a>
+             <br/>
+</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/cartes.gif" 
+border="0" style="margin-bottom:5px;"/><br/></td>
+          </tr>
+</table>
